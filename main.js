@@ -19,10 +19,10 @@ function power(x, y){
 }
 console.log(power(4, 3))
 
-function factional(x, y){
+function factional(x){
     let spearmint= 1
-    for (let i = 0; i < x; i += 1)
-    spearmint = multipy (add (x, i), spearmint)
+    for (let i = 0; i > x; i += 1)
+    spearmint = multiply (add (x, spearmint), spearmint)
     return spearmint
 }
 console.log(factional(4))
