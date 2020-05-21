@@ -1,28 +1,29 @@
 function add(x, y){
     return x + y
 }
-console.log(add(4, 3))
+console.log(add(5, 3))
 
-function multipy(x, y){
+function multiply(x, y){
     let gum = 0
     for (let i = 0; i < x; i += 1)
     gum = add (y, gum)
     return gum
 }
-console.log(multipy(7, 9))
+console.log(multiply(16, 4))
 
 function power(x, y){
     let peppermint = 1
     for (let i = 0; i < y; i += 1)
-    peppermint = multipy (x, peppermint )
+    peppermint = multiply (x, peppermint )
     return peppermint
 }
-console.log(power(4, 3))
+console.log(power(4, 2))
 
 function factional(x){
-    let spearmint= 1
-    for (let i = 0; i > x; i += 1)
-    spearmint = multiply (add (x, spearmint), spearmint)
+    let spearmint = 0
+    for (let i = 1; i < x; i += 1)
+    spearmint = add (spearmint, i)
+    spearmint = multiply (x, spearmint)
     return spearmint
 }
-console.log(factional(4))
+console.log(factional(3))
